@@ -1,0 +1,22 @@
+{
+	"name": "@wpgeeks/force-add-to-cart",
+	"description": "WordPress force add to cart plugin",
+	"author": "WP Geeks",
+	"license": "GPL-2.0-or-later",
+	"devDependencies": {
+		"@wordpress/env": "^9.7.0",
+		"@wordpress/scripts": "^27.6.0"
+	},
+	"scripts": {
+		"start": "wp-env start",
+		"stop": "wp-env stop",
+		"wp": "wp-env run cli",
+		"build": "wp-scripts build",
+        "check-engines": "wp-scripts check-engines",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	}
+}
