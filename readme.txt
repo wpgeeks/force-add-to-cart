@@ -1,5 +1,5 @@
 === Force Add To Cart for WooCommerce ===
-Contributors: WPGeeks, MattGeri
+Contributors: wearewpgeeks, MattGeri
 Tags: woocommerce, add to cart, force add to cart
 Requires at least: 5.0
 Tested up to: 6.3
