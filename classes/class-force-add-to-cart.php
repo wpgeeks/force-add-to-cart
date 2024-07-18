@@ -48,14 +48,14 @@ class Force_Add_To_Cart {
 	 */
 	public function save_settings( $product_id ) {
 		if ( ! empty( $_POST['force_add_to_cart_id'] ) ) { // @phpcs:ignore
-			$force_add_to_cart_id = (int) wp_unslash( $_POST['force_add_to_cart_id'] );
+			$force_add_to_cart_id = (int) wp_unslash( $_POST['force_add_to_cart_id'] ); // @phpcs:ignore
 			$is_product_removable = true;
 
 			if ( empty( $_POST['force_add_to_cart_removable'] ) ) { // @phpcs:ignore
 				$is_product_removable = false;
 			}
 
-			update_post_meta( $product_id, self::PRODUCTS_OPTION_NAME, array( array( $force_add_to_cart_id, $is_product_removable ) )); // @phpcs:ignore
+			update_post_meta( $product_id, self::PRODUCTS_OPTION_NAME, array( array( $force_add_to_cart_id, $is_product_removable ) ) );
 		}
 	}
 
@@ -92,7 +92,7 @@ class Force_Add_To_Cart {
 					?>
 				</select>
 				<span class="button clear-force-add-to-cart-id">Clear</span>
-				<?php echo wc_help_tip( __( 'Additional products which will get added to the cart when a user adds this product to their cart.', 'force-add-to-cart' ) ); // WPCS: XSS ok. ?>
+				<?php echo wp_kses_post( wc_help_tip( __( 'Additional products which will get added to the cart when a user adds this product to their cart.', 'force-add-to-cart' ) ) ); ?>
 			</p>
 
 			<?php
@@ -110,6 +110,6 @@ class Force_Add_To_Cart {
 			);
 			?>
 		</div>
-		<?
+		<?php
 	}
 }

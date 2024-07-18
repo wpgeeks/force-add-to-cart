@@ -49,7 +49,7 @@ class Assets {
 		$screen = get_current_screen();
 
 		if ( ! empty( $screen->post_type ) && 'product' === $screen->post_type ) {
-			wp_enqueue_script( self::JS_HANDLE, FORCE_ADD_TO_CART_URL . 'src/admin.js', array( 'jquery' ), FORCE_ADD_TO_CART_VERSION );
+			wp_enqueue_script( self::JS_HANDLE, FORCE_ADD_TO_CART_URL . 'src/admin.js', array( 'jquery' ), FORCE_ADD_TO_CART_VERSION, false );
 		}
 	}
 
