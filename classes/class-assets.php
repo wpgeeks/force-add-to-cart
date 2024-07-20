@@ -36,8 +36,22 @@ class Assets {
 	 * @since 1.0
 	 */
 	public function hooks() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_styles' ), 9999 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ), 9999 );
+	}
+
+	/**
+	 * Enqueue public scripts.
+	 *
+	 * @since 1.0
+	 *
+	 * @return void
+	 */
+	public function enqueue_scripts() {
+		if ( is_cart() ) {
+			wp_enqueue_script( self::JS_HANDLE, FORCE_ADD_TO_CART_URL . 'src/cart.js', array( 'jquery' ), FORCE_ADD_TO_CART_VERSION, false );
+		}
 	}
 
 	/**
@@ -45,7 +59,7 @@ class Assets {
 	 *
 	 * @since 1.0
 	 */
-	public function enqueue_scripts() {
+	public function enqueue_admin_scripts() {
 		$screen = get_current_screen();
 
 		if ( ! empty( $screen->post_type ) && 'product' === $screen->post_type ) {
@@ -58,7 +72,7 @@ class Assets {
 	 *
 	 * @since 1.0
 	 */
-	public function enqueue_styles() {
+	public function enqueue_admin_styles() {
 		$screen = get_current_screen();
 
 		if ( ! empty( $screen->post_type ) && 'product' === $screen->post_type ) {
