@@ -30,7 +30,7 @@ class Bootstrap {
 	 * @var array Plugin objects.
 	 */
 	protected $container = array();
-	
+
 	/**
 	 * Constructor.
 	 *
