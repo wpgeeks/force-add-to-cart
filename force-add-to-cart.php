@@ -15,6 +15,10 @@
  * Author:      WP Geeks
  * Author URI:  https://wpgeeks.com
  * Text Domain: force-add-to-cart
+ * Domain Path: /languages
+ * 
+ * WC requires at least: 5.7.0
+ * WC tested up to: 9.1.2
  *
  * Copyright:   © 2024 WP Geeks
  * License:     GPL-2.0+

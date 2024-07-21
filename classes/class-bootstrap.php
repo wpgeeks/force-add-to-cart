@@ -30,6 +30,27 @@ class Bootstrap {
 	 * @var array Plugin objects.
 	 */
 	protected $container = array();
+	
+	/**
+	 * Constructor.
+	 *
+	 * @since 1.6
+	 *
+	 * @return void
+	 */
+	public function __construct() {
+		// Load plugin text domain.
+		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
+	}
+
+	/**
+	 * Load the plugin text domain for translation.
+	 *
+	 * @since 1.0
+	 */
+	public function load_plugin_textdomain() {
+		load_plugin_textdomain( 'force-add-to-cart', false, FORCE_ADD_TO_CART_DIR . 'languages' );
+	}
 
 	/**
 	 * Loads the different parts of the plugin and intializes the objects. Also

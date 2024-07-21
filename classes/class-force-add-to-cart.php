@@ -121,9 +121,9 @@ class Force_Add_To_Cart {
 					'value'         => $disable_remove ? 'yes' : false,
 					'wrapper_class' => '',
 					'class'         => '',
-					'label'         => __( 'Disable Remove', 'hide-prices' ),
+					'label'         => __( 'Disable Removing', 'force-add-to-cart' ),
 					'desc_tip'      => false,
-					'description'   => __( 'Don\'t allow the added product to be removed from the cart', 'hide-prices' ),
+					'description'   => __( 'Don\'t allow the added product to be removed from the cart', 'force-add-to-cart' ),
 				)
 			);
 			?>
