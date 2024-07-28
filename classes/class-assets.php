@@ -21,14 +21,14 @@ class Assets {
 	 *
 	 * @since 1.0
 	 */
-	const JS_HANDLE = 'wpgeeks-force-add-to-cart';
+	const JS_HANDLE = 'force-add-to-cart';
 
 	/**
 	 * Handle for enqueuing CSS assets.
 	 *
 	 * @since 1.0
 	 */
-	const CSS_HANDLE = 'wpgeeks-force-add-to-cart';
+	const CSS_HANDLE = 'force-add-to-cart';
 
 	/**
 	 * Hooks.

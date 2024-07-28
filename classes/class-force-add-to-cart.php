@@ -25,7 +25,7 @@ class Force_Add_To_Cart {
 	 *
 	 * @since 0.1
 	 */
-	const PRODUCTS_OPTION_NAME = 'wpgeeks_force_add_to_cart_products';
+	const PRODUCTS_OPTION_NAME = 'force_add_to_cart_products';
 
 	/**
 	 * Hooks.
@@ -202,7 +202,7 @@ class Force_Add_To_Cart {
 		woocommerce_store_api_register_endpoint_data(
 			array(
 				'endpoint'        => CartSchema::IDENTIFIER,
-				'namespace'       => 'wpgeeks_force_add_to_cart',
+				'namespace'       => 'force_add_to_cart',
 				'data_callback'   => array( $this, 'extend_data_callback' ),
 				'schema_callback' => array( $this, 'extend_schema_callback' ),
 				'schema_type'     => ARRAY_A,
