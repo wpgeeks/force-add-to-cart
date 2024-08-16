@@ -8,7 +8,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A WooCommerce plugin that allows you to force add a product to the shopping cart when a linked product is added.
+A WooCommerce plugin that allows you to force add a product to the shopping cart.
 
 == Description ==
 
@@ -17,6 +17,8 @@ Force Add To Cart for WooCommerce allows you to select a product which will auto
 Additionally, you have the ability to select whether a visitor is able to remove the product that was forcefully added or to restrict removing the product from the cart.
 
 The plugin works with both the classic cart experience and the new React based cart block.
+
+Built by [WP Geeks](https://wpgeeks.com).
 
 == Installation ==
 
