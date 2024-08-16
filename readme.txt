@@ -22,10 +22,14 @@ Built by [WP Geeks](https://wpgeeks.com).
 
 == Installation ==
 
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Search for 'Force Add To Cart'
-3. Click 'Install Now'
+1. Navigate to the *Add New* in the plugins dashboard
+2. Search for *Force Add To Cart*
+3. Click *Install Now*
 4. Activate the plugin on the Plugin dashboard
+
+== Usage ==
+
+Once you have installed the plugin, you will find the settings on the *Edit Product* page in WooCommerce, under the section *Linked Products* in the *Product Data* metabox.
 
 == Frequently Asked Questions ==
 
@@ -37,7 +41,13 @@ No, it will remain in the cart and the user will have to remove it. If you selec
 
 You can add a forced product to a parent variable product, but not to individial variation of that product.
 
+== Screenshots ==
+
+1. For a product to be added to the cart when a simple product gets added to the cart
+2. Search for a product to force add to the cart
+3. Variable product settings for forcing a product to the cart
+
 == Changelog ==
 = 1.0 =
-* Add - Select a linked product to force add to the cart when the parent product is added to the cart
-* Add - Enable or disable the ability to remove the force added product from the cart
+* Added - Select a linked product to force add to the cart when the parent product is added to the cart
+* Added - Enable or disable the ability to remove the force added product from the cart
