@@ -43,7 +43,7 @@ You can add a forced product to a parent variable product, but not to individial
 
 == Screenshots ==
 
-1. For a product to be added to the cart when a simple product gets added to the cart
+1. Force a product to be added to the cart when a simple product gets added to the cart
 2. Search for a product to force add to the cart
 3. Variable product settings for forcing a product to the cart
 
